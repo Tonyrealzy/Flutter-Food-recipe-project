@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:project/widgets/header.dart';
-import 'package:project/widgets/topButton.dart';
+import 'package:project/widgets/topbutton.dart';
 
 // ignore: must_be_immutable
 class MyHomePage extends StatelessWidget {
@@ -22,12 +22,29 @@ class MyHomePage extends StatelessWidget {
                   horizontal: deviceWidth * 0.05,
                   vertical: deviceHeight * 0.006),
               child: Column(
-                children: [headerSection()],
+                children: [headerSection(), videoSection()],
               ))),
         ));
   }
 
-  Widget imageSection() {
-    return Image.asset();
+  Widget videoSection() {
+    return Padding(
+      padding:
+          const EdgeInsets.only(top: 24.0, left: 2.0, bottom: 8.0, right: 2.0),
+      child: Container(
+        height: deviceHeight * 0.265,
+        width: deviceWidth,
+        decoration: BoxDecoration(
+            image: const DecorationImage(
+              fit: BoxFit.cover,
+              image: AssetImage('assets/images/food.png'),
+            ),
+            borderRadius: BorderRadius.circular(20.0)),
+      ),
+    );
+  }
+
+  Widget playButton() {
+    return Container();
   }
 }
