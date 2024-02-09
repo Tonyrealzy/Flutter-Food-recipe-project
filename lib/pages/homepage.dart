@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:project/widgets/header.dart';
-import 'package:project/widgets/profile.dart';
-import 'package:project/widgets/top_button.dart';
+import 'package:project/widgets/all_food_section_widget.dart';
+import 'package:project/widgets/header_section_widget.dart';
+import 'package:project/widgets/play_video_widget.dart';
+import 'package:project/widgets/profile_section_widget.dart';
+import 'package:project/widgets/top_button_widget.dart';
 
 // ignore: must_be_immutable
 class MyHomePage extends StatelessWidget {
@@ -15,7 +17,7 @@ class MyHomePage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(actions: [topButtonSection()]),
-      body: SafeArea(
+      body: SingleChildScrollView(
         child: Center(
             child: (Container(
                 height: deviceHeight,
@@ -24,65 +26,24 @@ class MyHomePage extends StatelessWidget {
                     horizontal: deviceWidth * 0.05,
                     vertical: deviceHeight * 0.006),
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     headerSection(),
                     const SizedBox(
                       height: 10.0,
                     ),
-                    playVideo(),
+                    playVideo(deviceHeight, deviceWidth),
                     const SizedBox(
                       height: 10.0,
                     ),
-                    profileSection(), 
+                    profileSection(),
+                    const SizedBox(
+                      height: 10.0,
+                    ),
+                    allFoodSection(),
                   ],
-                )
-                ))),
+                )))),
       ),
-    );
-  }
-
-  Widget videoSection() {
-    return Padding(
-      padding:
-          const EdgeInsets.only(top: 12.0, left: 2.0, right: 2.0),
-      child: Container(
-        height: deviceHeight * 0.265,
-        width: deviceWidth * 0.9,
-        decoration: BoxDecoration(
-            image: const DecorationImage(
-              fit: BoxFit.cover,
-              image: AssetImage('assets/images/food.png'),
-            ),
-            borderRadius: BorderRadius.circular(14.0)),
-      ),
-    );
-  }
-
-  Widget playButton() {
-    return GestureDetector(
-      onTap: () {},
-      child: Container(
-        height: deviceWidth * 0.15,
-        width: deviceWidth * 0.15,
-        decoration: const BoxDecoration(
-            image: DecorationImage(
-                fit: BoxFit.cover,
-                image: AssetImage('assets/images/image3.png'))),
-      ),
-    );
-  }
-
-  Widget playVideo() {
-    return Stack(
-      children: [
-        Positioned(
-            child: videoSection()),
-        Positioned(
-            top: deviceHeight * 0.115,
-            left: deviceWidth * 0.355,
-            child: playButton())
-      ],
     );
   }
 }
+

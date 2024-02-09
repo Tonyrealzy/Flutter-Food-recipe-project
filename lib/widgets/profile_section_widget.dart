@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:project/widgets/about.dart';
-import 'package:project/widgets/follow.dart';
-import 'package:project/widgets/review.dart';
+import 'package:project/widgets/about_section_widget.dart';
+import 'package:project/widgets/follow_button_widget.dart';
+import 'package:project/widgets/review_section_widget.dart';
 
 Widget profileSection() {
   return Column(
