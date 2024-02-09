@@ -18,7 +18,16 @@ Widget profileSection() {
       ),
       Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [aboutSection(), followButton()],
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(left: 4.0),
+            child: aboutSection(),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 2.0, right: 4.0),
+            child: followButton(),
+          )
+        ],
       )
     ],
   );

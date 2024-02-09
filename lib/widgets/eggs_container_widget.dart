@@ -4,9 +4,9 @@ import 'package:google_fonts/google_fonts.dart';
 Widget eggsSection() {
   return Row(children: [
     Padding(
-      padding: const EdgeInsets.only(left: 16.0, right: 16.0),
+      padding: const EdgeInsets.only(left: 18.0, right: 16.0),
       child: Container(
-          height: 60,
+          height: 50,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10.0),
             color: Colors.white,
@@ -18,9 +18,9 @@ Widget eggsSection() {
   ]);
 }
 
-Widget eggsContainer() {
+Widget eggsSectionContainer() {
   return Container(
-    height: 95,
+    height: 80,
     decoration: BoxDecoration(
       borderRadius: BorderRadius.circular(10.0),
       color: const Color.fromARGB(255, 226, 226, 226),
@@ -35,7 +35,7 @@ Widget eggsContainer() {
           child: Text("200g",
               style: GoogleFonts.poppins(
                   fontWeight: FontWeight.w400,
-                  fontSize: 18,
+                  fontSize: 17,
                   color: Colors.grey)),
         ),
       ],

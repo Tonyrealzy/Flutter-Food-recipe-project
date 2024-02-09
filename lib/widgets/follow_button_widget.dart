@@ -12,7 +12,7 @@ Widget followButton() {
       backgroundColor: MaterialStateProperty.all<Color>(Colors.red),
       shape: MaterialStateProperty.all<RoundedRectangleBorder>(
           RoundedRectangleBorder(borderRadius: BorderRadius.circular(12))),
-      fixedSize: MaterialStateProperty.all<Size>(const Size.fromHeight(45.0)),
+      fixedSize: MaterialStateProperty.all<Size>(const Size.fromHeight(47.0)),
     ),
     child: Text("Follow",
         style: GoogleFonts.poppins(

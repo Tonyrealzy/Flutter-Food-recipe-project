@@ -11,7 +11,7 @@ Widget allFoodSection() {
       children: [
         Padding(
           padding: const EdgeInsets.only(
-              left: 8.0, right: 8.0, top: 16.0, bottom: 16.0),
+              left: 8.0, right: 8.0, top: 13.0, bottom: 14.0),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -26,12 +26,11 @@ Widget allFoodSection() {
             ],
           ),
         ),
-        breadContainer(),
-        const SizedBox(height: 15.0),
-        eggsContainer(),
-        const SizedBox(height: 15.0),
-        milkContainer(),
-        const SizedBox(height: 15.0),
+        breadSectionContainer(),
+        const SizedBox(height: 12.0),
+        eggsSectionContainer(),
+        const SizedBox(height: 12.0),
+        milkSectionContainer()
       ],
     ),
   );
