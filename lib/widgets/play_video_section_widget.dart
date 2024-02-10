@@ -1,7 +1,7 @@
 //Widgets dependent on deviceWidth and deviceHeight...
 import 'package:flutter/material.dart';
 
-Widget videoSection(double deviceHeight, double deviceWidth) {
+Widget video(double deviceHeight, double deviceWidth) {
   return Padding(
     padding: const EdgeInsets.only(top: 12.0, left: 2.0, right: 2.0),
     child: Container(
@@ -31,10 +31,10 @@ Widget playButton(double deviceHeight, double deviceWidth) {
   );
 }
 
-Widget playVideo(double deviceHeight, double deviceWidth) {
+Widget playVideoSection(double deviceHeight, double deviceWidth) {
   return Stack(
     children: [
-      Positioned(child: videoSection(deviceHeight, deviceWidth)),
+      Positioned(child: video(deviceHeight, deviceWidth)),
       Positioned(
           top: deviceHeight * 0.110,
           left: deviceWidth * 0.375,

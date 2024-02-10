@@ -11,7 +11,7 @@ Widget eggsSection() {
             borderRadius: BorderRadius.circular(10.0),
             color: Colors.white,
           ),
-          child: Image.asset("assets/images/image1.png")),
+          child: Image.asset("assets/images/image5.png")),
     ),
     Text("Eggs",
         style: GoogleFonts.poppins(fontWeight: FontWeight.w600, fontSize: 20)),

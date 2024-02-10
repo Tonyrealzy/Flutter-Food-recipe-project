@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:project/widgets/all_food_section_widget.dart';
 import 'package:project/widgets/header_section_widget.dart';
-import 'package:project/widgets/play_video_widget.dart';
+import 'package:project/widgets/play_video_section_widget.dart';
 import 'package:project/widgets/profile_section_widget.dart';
 import 'package:project/widgets/top_button_widget.dart';
 
@@ -31,7 +31,7 @@ class MyHomePage extends StatelessWidget {
                     const SizedBox(
                       height: 10.0,
                     ),
-                    playVideo(deviceHeight, deviceWidth),
+                    playVideoSection(deviceHeight, deviceWidth),
                     const SizedBox(
                       height: 10.0,
                     ),
